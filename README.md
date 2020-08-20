@@ -1,25 +1,16 @@
-# conceitos_reactjs
+# conceitos React Native
 Conceitos iniciais de React-Native
 
-[![node version](https://img.shields.io/node/v/react)](https://img.shields.io/node/v/react)
+[![node version](https://img.shields.io/node/v/react-native)](https://img.shields.io/node/v/react-native)
+![npm](https://img.shields.io/npm/v/react-native?label=react-native)
 <br>
 
 ## Conceitos estudados
-- Babel
-- Webpack
-- Componentização
-- UseState
-- UseEffect
+- SafeAreaView
+- 'Tags' do react-native (text, view)
+- Estilização com stylesheet do react-native
+- Uso de FlatList
 - Axios (integração com API)
-
-## Curiosidades
-
-Um dos conceitos mais legais que aprendi nesse módulo, foi como configurar um projeto react do zero, sem depender do 'create-react-app'. 
-Dessa forma foi possível entender conceitos do babel, configurações do webpack passo a passo. Abaixo é possível ver como ficou a estrutura do webpack após realizar algumas configurações, por exemplo para o react aceitar que importemos imagens dentro do js.
-> Esse arquivo está no caminho './frontend/webpack.config.js'
-<p align="center">
-  <img  src="webpack.PNG" />
-</p>
 
 
 ## Requisitos de instalação
@@ -28,26 +19,46 @@ Dessa forma foi possível entender conceitos do babel, configurações do webpac
 
 ## Como utilizar
 
-### Web
+### Mobile
 
 #### Execute o comando para ir para o diretório do desafio, que é onde consta mais funcionalidades com API:
 
-```
-cd desafio
-```
+### Mobile
 
-#### Execute o comando para instalações de dependências do web:
+#### Acesse o diretório do mobile
 
 ```
-yarn
+cd mobile
 ```
 
-#### Iniciar o site:
-> Para rodar a API junto, <a href="https://github.com/tsunodajapa/conceitos_node">clique aqui<a/> para acessar o repositório da API
+#### Execute o comando para instalações de dependências do mobile:
+> Altere a baseURL em ./src/services/api.ts
 
 ```
-yarn dev
+yarn install
 ```
+
+#### Com o celular plugado no PC, utilize o comando:
+> É necessário ativar o modo de depuração do celular
+
+##### Android
+
+> Para rodar a API junto, <a href="https://github.com/tsunodajapa/conceitos_node">clique aqui</a> para acessar o repositório da API
+
+```
+yarn android
+```
+ou
+
+##### IOS
+
+```
+yarn ios
+```
+
+
+
+
 
 
 
